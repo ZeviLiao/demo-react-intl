@@ -15,7 +15,7 @@ addLocaleData([...en, ...zh]);
 
 ReactDOM.render(
     <HotSwappingIntlProvider initialLocale="en" initialMessages={zh_TW}>
-        <App />
+        <App name="Zevi"/>
     </HotSwappingIntlProvider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

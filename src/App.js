@@ -6,7 +6,7 @@ import { FormattedMessage } from 'react-intl';
 class App extends React.Component {
 
   render() {
-    const { setLang } = this.props
+    const { setLang, name } = this.props
     return (
       <div style={{ margin: '3rem' }}>
         <button onClick={() => setLang('en')}>en</button>
@@ -19,7 +19,7 @@ class App extends React.Component {
           description='say hello to Howard.'
           defaultMessage='Hello, Howard!'
           values={{
-            someone: <b>this.props.name</b>
+            someone: <b>{name}</b>
           }}
         />
       </div >
